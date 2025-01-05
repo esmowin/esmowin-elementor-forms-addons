@@ -48,7 +48,7 @@ final class Form_Completed_Validations extends SingletonBase
     }
 
     $field_type = 'tel';
-    $tel_fields = $this->get_fields_by_type($field_type, form_fields: $form_fields);
+    $tel_fields = $this->get_fields_by_type($field_type, $form_fields);
 
     if (!empty($tel_fields)) {
       $this->form_completed_validation_tel_fields($tel_fields, $ajax_handler);
